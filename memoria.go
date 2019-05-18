@@ -43,7 +43,7 @@ func totalCpu(w http.ResponseWriter, r *http.Request) {
 	dt := time.Now()
 	fmt.Println(dt.Format("01-02-2006 15:04:05")," | Retornando total de CPU")
 
-	fmt.Println(vmStat[0]);
+	//fmt.Println(vmStat[0]);
 	//Enviando el json
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
