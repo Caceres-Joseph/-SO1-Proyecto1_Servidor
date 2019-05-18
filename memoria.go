@@ -35,6 +35,7 @@ func totalCpu(w http.ResponseWriter, r *http.Request) {
 	jsonMemoria := JsonMemoria{0,0,math.Floor(vmStat[0]*100)/100 }
 	
 
+
 	//Creando el json
 	js, err := json.Marshal(jsonMemoria)
 	dealwithErr(err)
@@ -42,6 +43,7 @@ func totalCpu(w http.ResponseWriter, r *http.Request) {
 	dt := time.Now()
 	fmt.Println(dt.Format("01-02-2006 15:04:05")," | Retornando total de CPU")
 
+	fmt.Println(vmStat[0]);
 	//Enviando el json
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
