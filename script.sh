@@ -15,8 +15,8 @@ source ~/.profile
 cd /tmp
 mkdir Servidor
 cd Servidor
-git clone https://github.com/Caceres-Joseph/-SO1-Proyecto1_Servidor.git
-cd /tmp/Servidor/-SO1-Proyecto1_Servidor/
+git clone https://github.com/Caceres-Joseph/_SO1_Proyecto1_Servidor.git
+cd /tmp/Servidor/_SO1_Proyecto1_Servidor/
 go get github.com/shirou/gopsutil/mem
 go get github.com/shirou/gopsutil/cpu
 go run memoria.go &
